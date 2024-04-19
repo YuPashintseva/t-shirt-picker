@@ -1,0 +1,58 @@
+#imageCarousel {
+  max-width: 450px;
+}
+
+body {
+  background: linear-gradient(-45deg, #e69e88, #d681a2, #5eafcc, #6ec4b0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.questionnary-container .container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensures the carousel does not exceed a maximum width */
+#imageCarousel {
+  max-width: 450px; /* Adjust this value to suit your design */
+}
+
+/* Flexbox layout for the questionnaire and carousel */
+.questionnary-container .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Adjust alignment as needed */
+}
+
+.questionnary-container .col-md-6 {
+  flex: 1; /* Each column takes up equal space */
+  margin: 10px; /* Adds some space between the columns */
+}
+
+/* Additional responsive adjustments if necessary */
+@media (max-width: 768px) {
+  .questionnary-container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
